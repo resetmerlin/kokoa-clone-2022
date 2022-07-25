@@ -1,3 +1,3 @@
 #Kokoa Clone 2022 update
 
-52% complete studying
+52% complete studying revise revise revise
