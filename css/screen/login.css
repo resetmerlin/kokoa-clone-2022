@@ -1,0 +1,83 @@
+
+.welcome-header{
+    margin-top: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+ 
+    /* display: flex 사용할 수 있지만 text이기때문에 
+    text-align 사용한다. */
+ }
+ 
+ .welcome-header__title{
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-size: 25px;
+ }
+ 
+ .welcome-header__text{
+    width: 90%;
+    /* 양 옆 넓이 넓혀줍니다. */
+    opacity: 0.5;
+ }
+ 
+ #login-form{
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+    margin: 0px 30px;
+ }
+ 
+ #login-form input{
+    padding: 15px 0px;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    transition: border-color .3s ease-in-out;
+    font-size: 16px;
+ 
+ 
+ }
+ 
+ #login-form input::placeholder{
+    color: rgba(0,0,0,0.5);
+ }
+ 
+ #login-form input:focus{
+    border-color: var(--yellow) ;
+ 
+ }
+ 
+ #login-form input[type=submit]{
+    border: none;
+    margin-top: 15px;
+    padding: 15px;
+    font-weight:600;
+    background-color: none;
+    cursor: pointer;
+    border-radius: 5px;
+ 
+ }
+ 
+ 
+ #login-form input[type=submit]:hover{
+    background-color: var(--yellow);
+    /* 다시 공부 필요하다 */
+    /* var???/ --yellow??? */
+ }
+ 
+ 
+ #login-form a{
+    color: inherit;
+    /* color: black; 보다는 inherit*/
+    border: none;
+    text-decoration-line : none;
+    /* 링크 밑줄 없애는 방법 */
+    margin: 15px;
+    text-align: center;
+ }
+ 
+ 
+ 
+ 

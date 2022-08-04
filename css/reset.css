@@ -41,3 +41,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+input:focus{
+   outline: none;
+   /* outline 있으면 입력란 클릭시 주변이 노란색으로 변함 */
+}
