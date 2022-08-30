@@ -3,9 +3,14 @@
 @import "status-bar.css";
 @import "./components/variables.css";
 @import "./screen/login.css";
+@import "./screen/screen-header.css";
 
+@import "./end-bar.css";
+@import "./screen/friends.css"; 
+
+@import "./components/user-component.css";
 body{
-   height: 25vh;
+   height: 1000vh;
    font-family: 'Open Sans', sans-serif;     
   }
   

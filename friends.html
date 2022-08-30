@@ -1,74 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Challenge goals</title>
+<html lang="kr">
+<head>
+    <link rel="stylesheet" href="css/style.css"/>
 
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@900&display=swap');
-    h1{
-      font-family: 'Frank Ruhl Libre', serif;
-    }
-    
-    </style>
-  </head>
-  <body>
-    <h1> Create An Account</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/end-bar.css">
+    <title>Friends - Kokoa Clone</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i> 
+                <!-- To Do: wifi Icon -->
+        </div>
 
-    <form>
-  
-    <div><label for="first-name">First name</label>
-      <input id="first-name" required placeholder="Name" type="text"/>
-    </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
 
-    <div>     <label for="Last Name">Last name</label>
-      <input id="Last Name" required placeholder="Last name"       type="text"/>
-    </div>
-
-    <div> <label for="email">Email</label>
-      <input id="email" required placeholder="email" type="email"/>
-    </div>
-
-    <div>     <label for="User-name">Username</label>
-      <input id="User-name" required placeholder="Username" type="text"/>
-    </div>
-
-      <div>    <label for="password">Password</label>
-      <input id="password" required placeholder="Password" minlength="10" type="password"/>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fa-solid fa-battery-full"></i>
+            <!-- Battery Icon -->
+            <i class="fa-solid fa-bolt"></i>
+            <!-- Lightning Icon -->
+        </div>
     </div>
 
 
-      <div>      <label for="birth-date">Birth date</label>
-      <input id="birth-date" required placeholder="Birth date"   type="date"/>
+
+    <header class="screen-header">
+
+        <h1 class="screen-header__title">Friends</h1>
+
+        <div class="screen-header__icons">
+        <span><i class="fa-solid fa-user-plus"></i></span>
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+
+        <span><i class="fa-solid fa-gear"></i>    </span>
+    </div>
+    </header>
+
+    <a id="friends-display-link">
+        <i class="fa-solid fa-circle-info"></i>
+        <span>Friends' Names Display</span>
+        <i class="fa-solid fa-chevron-right fa-xs"></i>
+    </a>
+
+
+
+
+    <main class="friends-screen">
+
+
+    <div class="user-component">
+
+            <div class="user-component__column">
+
+
+                <img class="user-component__avatar" src="css/components/profile.jpg" />
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Nicolas</h4>
+                    <h6 class="user-component__subtitle">Berserk</h6>
+
+                </div>
+                
+
+            </div>
+            <div class="user-component__column"></div>
+
+
     </div>
 
-      <div>
-      <label for="degree"> How happy are you?</label>
-          
-      <input id="degree" required placeholder="Birth date" type="range" list="steplist">
-      <datalist id="steplist">
-        <option value="0"></option>
-        <option value="10"></option>
-        <option value="20"></option>
-        <option value="30"></option>
-        <option value="40"></option>
-        <option value="50"></option>
-        <option value="60"></option>
-        <option value="70"></option>
-        <option value="80"></option>
-        <option value="90"></option>
-        <option value="100"></option>
+    <div class="user-component no-subtitle">
+        <div class="user-component__channel-header">
+            <span class="user-component_channel-header-title">    생일인 친구</span>
         
-      </datalist>
+            <i class="fa-solid fa-chevron-up fa-xs top-chevron"></i>
+
+        
+        
+        </div>
+
+
+        <div class="user-component__column">
+            <img class="user-component__avatar user-component__avatar--sm" src="css\components\happybirthday.png"/>
+
+    
+        
+        <div class="user-component__text user-component__has-side-title">
+            
+                <h4 class="user-component__title normal__font-weight"> 친구의 생일을 확인해 보세요!</h4> 
+                
+                
+                
+            <div class="user-component__flex-end">
+                <span class="user-component__side-subtitle">2</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        </div>
+
     </div>
 
-      <div> <label for="color">What is your fav.color?</label>
-      <input id="color" required placeholder="Color" type="color"/>
-    </div>
-    <label for="submit"></label>
-    <input type="submit" value="Create Account">
 
-    </form>
-  </body>
+
+
+
+
+
+
+    
+
+    <div class="user-component no-subtitle">
+
+        <div class="user-component__channel-header">
+
+            <span class="user-component_channel-header-title">  Channel</span>
+        
+            <i class="fa-solid fa-chevron-up fa-xs top-chevron"></i>
+
+        
+        </div>
+
+
+        <div class="user-component__column">
+
+        <img class="user-component__avatar user-component__avatar--sm" src="css/components/channel.png"/>
+        <!-- '/' 이거 파일명 앞에 두면 잘 안 나옴...
+         -->
+         <div class="user-component__text user-component__has-side-title">
+            <h4 class="user-component__title normal__font-weight">Channel</h4>
+            <h6 class="user-component__subtitle"></h6>
+
+
+         
+            <div class="user-component__flex-end">
+                <span class="user-component__side-subtitle">2</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+
+        </div>
+
+        </div>
+
+    </div>
+
+
+</main>
+
+    <nav class="end-bar">
+
+      <ul class="nav_list">
+        <li class="nav_btn">
+            <a class="nav_link" href="friends.html">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </li>
+        <li class="nav_btn">
+            <a class="nav_link" href="chats.html">
+                <span class="nav__notification__number">1</span>
+                <i class="fa-regular fa-comment"></i>            </a>
+        </li>
+        <li class="nav_btn">
+            <a class="nav_link" href="find.html">
+                <ion-icon name="search-outline"></ion-icon>            </a>
+        </li>
+        <li class="nav_btn">
+            <a class="nav_link" href="#">
+                <span class="nav__notification__n_number"></span>
+
+                <i class="fa-solid fa-ellipsis"></i>
+            </a>
+        </li>
+      </ul>
+
+    </nav>
+
+
+    <script src="https://kit.fontawesome.com/5d0826b8cc.js" crossorigin="anonymous"></script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
 </html>

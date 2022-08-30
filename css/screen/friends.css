@@ -1,0 +1,29 @@
+#friends-display-link{
+    display: block;
+    text-align: center;
+    background-color: rgb(246, 246, 246);
+    padding: 14px;
+    color: rgb(185, 184, 184);
+}
+
+#friends-display-link span{
+
+    color: rgb(100, 100, 100);
+}
+
+
+.friends-screen{
+    padding: 0px var(--horizontal-space);
+}
+
+#friends-display-link-ads{
+
+    display: block;
+}
+#friends-display-link-ads img{
+    border-radius: 7px;
+
+    height: 70px;
+    width: 100%;
+}
+

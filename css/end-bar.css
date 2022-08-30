@@ -1,0 +1,92 @@
+ 
+
+
+
+
+.end-bar{
+
+    
+    background-color: rgb(249,249,250);
+    border-top: solid rgb(222,222,223) 1px;
+
+    position: fixed;
+    bottom:0;
+    width:100%;
+    box-sizing: border-box;
+
+    /* what is box-sizing */
+        /* 2022-08-14 */
+
+
+}
+
+
+.nav_list{    
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    padding: 20px 30px;
+    /* margin으로 잡는거 생각보다 어렵다 */
+    /* padding이 더 쉽다 */
+    /* 여거는 중요한건데....  */
+
+
+}
+
+.nav_link{
+    position: relative;
+    /* position absolute는  가장 가까운 relative를 가진 
+    부모 기준으로 움직인다.*/
+
+}
+
+.nav__notification__number{
+    background-color: tomato;
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    left: 13px;
+    bottom:16px;
+    font-size: 10px;
+    
+    
+}
+
+.nav__notification__n_number{
+    background-color: tomato;
+
+    width: 5px;
+    height: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 25px;
+    bottom:23px;
+    font-size: 10px;
+    
+
+}
+/* box-sizing: border-box
+- padding을 줄때 box의 사이즈는 유지하고 싶을때 사용
+ex) 200px인 박스에 20px padding-left를 주면 박스의 사이즈는 
+20px만큼 작아지게 된다.(padding 때문) css는 그걸 알고 
+박스사이즈를 유지하기위해 20px만큼 늘어나는데 이걸 막는게 
+box-sizing:border-box 이다. */
+
+
+/* 이거는 중요한건데 link 값을 아예 inherit로 할려면 그냥 a{}해서 inherit 하거나 아니면 직접 해당 link 클래스에 inherit
+써야 함///// 왜냐하면ㅋ~~~~~~~~~ 위에 클래스 사용하면 전혀 효과를 안 받아요요ㅛㅛ 
+2022-08-14 */
+
+
+
+/* end-status bar icon resize */
+
+

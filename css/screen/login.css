@@ -22,34 +22,36 @@
     /* 양 옆 넓이 넓혀줍니다. */
     opacity: 0.5;
  }
+
+
+ .login-form__input{
+   padding: 15px 0px;
+   border: none;
+   border-bottom: 2px solid rgba(0,0,0,0.3);
+   transition: border-color .3s ease-in-out;
+   font-size: 16px;
+
+ }
+
  
- #login-form{
+ .login-form{
     display: flex;
     flex-direction: column;
     opacity: 0.8;
     margin: 0px 30px;
  }
  
- #login-form input{
-    padding: 15px 0px;
-    border: none;
-    border-bottom: 2px solid rgba(0,0,0,0.3);
-    transition: border-color .3s ease-in-out;
-    font-size: 16px;
- 
- 
- }
- 
- #login-form input::placeholder{
+
+ .login-form__input::placeholder{
     color: rgba(0,0,0,0.5);
  }
  
- #login-form input:focus{
+ .login-form__input:focus{
     border-color: var(--yellow) ;
  
  }
  
- #login-form input[type=submit]{
+ .login-form__btn[type=submit]{
     border: none;
     margin-top: 15px;
     padding: 15px;
@@ -61,14 +63,13 @@
  }
  
  
- #login-form input[type=submit]:hover{
+ .login-form__btn[type=submit]:hover{
     background-color: var(--yellow);
     /* 다시 공부 필요하다 */
     /* var???/ --yellow??? */
  }
  
- 
- #login-form a{
+ .login-form__a{
     color: inherit;
     /* color: black; 보다는 inherit*/
     border: none;
