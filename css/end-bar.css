@@ -6,8 +6,8 @@
 .end-bar{
 
     
-    background-color: rgb(249,249,250);
-    border-top: solid rgb(222,222,223) 1px;
+    background-color: rgb(230, 230, 230);
+    border-top: solid rgb(222,222,223) 2px;
 
     position: fixed;
     bottom:0;
@@ -41,18 +41,11 @@
 }
 
 .nav__notification__number{
-    background-color: tomato;
-    width: 18px;
-    height: 18px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+
     position: absolute;
     left: 13px;
     bottom:16px;
-    font-size: 10px;
+ 
     
     
 }

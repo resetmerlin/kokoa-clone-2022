@@ -6,7 +6,7 @@
     position: relative;
     
 
-    padding: 14px 0px 14px 0px;
+    padding: 10px 0px 10px 0px;
     align-items: center;
     box-sizing: border-box;
 
@@ -14,7 +14,7 @@
 
 }
 
-.user-component__column:first-child{
+.user-component__column{
 
     display: flex;
     align-items: center;
@@ -27,6 +27,7 @@
     height: 70px;
     border-radius: 28px;
     margin-right: 16px;
+    
 
 
 
@@ -63,12 +64,12 @@
 }
 
 
-.user-component__column:nth-child(2){
+.user-component__column{
 
     display: flex;
 
     align-items: center;
-    margin-top: 15px;
+
 
 
 }
@@ -97,9 +98,6 @@
 .user-component__flex-end{
     color:  rgb(159,159,159);
     font-size: 12px;
-    position: relative;
-    margin-bottom: 15px;
-
 
 
 }
@@ -169,19 +167,69 @@
 
 .user-component__more-options{
     display: flex;
-    justify-content: center;
-    font-size: 30px;
-    margin-top: 10px;
+    justify-content: space-around;
+    font-size: 45px;
+    margin-top: 30px;
+    padding: 35px;
+    border-bottom: solid rgb(222,222,223) 1px;
+
 }
 .user-component__more-options span{
     font-size: 20px;
+    margin-top: 30px;
     display: flex;
     
 }
 
 .user-component__more-options div{
-
-    justify-content: center;
+    display: flex;
     align-items: center;
+    flex-direction: column;
+    
     
 }
+
+.recommendations{
+    margin-top: 20px;
+    color:  rgb(159,159,159);
+
+
+}
+
+.recommendations__result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+    border-bottom: solid rgb(222,222,223) 1px;
+    color:  rgb(159,159,159);
+
+    
+
+
+}
+.openchat__nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color:  rgb(159,159,159);
+
+
+}
+
+.user-component__time{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.badge__center{
+    display: flex;
+    justify-content: center;
+}
+
+.user-component__column:last-child {
+    color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
